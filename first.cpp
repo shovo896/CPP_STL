@@ -13,7 +13,10 @@ int main() {
     cout<< "size of numbers : " << numbers.size() << endl ;
 
     numbers.push_back(10) ; 
+
+    cout<< "size of numbers : " << numbers.size() << endl ; 
     
+
     while(1){
         int x ; 
         cin >> x ; 
