@@ -15,15 +15,16 @@ int main() {
     numbers.push_back(10) ; 
 
     cout<< "size of numbers : " << numbers.size() << endl ; 
-    
+    numbers.push_back(2);
+
+    cout<< "size of numbers : " << numbers.size() << endl ; 
 
     while(1){
         int x ; 
         cin >> x ; 
         if(x == -1) break ;
         numbers.push_back(x) ;
-
-        cout<<numbers.size() << endl ;
+        cout<< "size of numbers : " << numbers.size() << endl ;
     }
     cout<<numbers.size() << endl ;
     sort(numbers.begin(),numbers.end());
