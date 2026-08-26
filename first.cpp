@@ -16,9 +16,10 @@ int main() {
         if(x == -1) break ;
         numbers.push_back(x) ;
 
-        
+        cout<<numbers.size() << endl ;
     }
     cout<<numbers.size() << endl ;
+    sort(numbers.begin(),numbers.end());
 
     return 0;
 }
