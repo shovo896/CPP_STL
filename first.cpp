@@ -11,6 +11,9 @@ int main() {
     // Initialize array and demonstrate usage
     vector<int> numbers ; 
     cout<< "size of numbers : " << numbers.size() << endl ;
+
+    numbers.push_back(10) ; 
+    
     while(1){
         int x ; 
         cin >> x ; 
