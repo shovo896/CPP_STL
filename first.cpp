@@ -21,5 +21,9 @@ int main() {
     cout<<numbers.size() << endl ;
     sort(numbers.begin(),numbers.end());
 
+    for(int i = 0 ; i < numbers.size() ; i++){
+        cout<<numbers[i]<<" " ;
+    }
+
     return 0;
 }
