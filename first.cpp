@@ -10,6 +10,7 @@ vec.size() O(1)
 int main() {
     // Initialize array and demonstrate usage
     vector<int> numbers ; 
+    cout<< "size of numbers : " << numbers.size() << endl ;
     while(1){
         int x ; 
         cin >> x ; 
