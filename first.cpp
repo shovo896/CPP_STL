@@ -18,6 +18,11 @@ int main() {
     numbers.push_back(2);
 
     cout<< "size of numbers : " << numbers.size() << endl ; 
+    cout<< "first element : " << *numbers.begin() << endl ;
+    
+    cout << *numbers.begin() << endl ;
+
+    cout << "last element : " << *(numbers.end() - 1) << endl ;
 
     while(1){
         int x ; 
