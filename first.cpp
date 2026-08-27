@@ -66,7 +66,9 @@ int main() {
 
 
     cout<<*(numbers.begin()+3) <<endl ; 
-
+// hepbsjvb n
+    cout<< numbers.end() - numbers.begin()+3 << endl ;
+    ///diuyghjbhj hdhx
 
     return 0;
 }
