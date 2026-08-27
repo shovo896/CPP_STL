@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <vector>
 using namespace std ; 
@@ -19,18 +18,16 @@ void changevalue(vector<char>&v,int id,char value){
 }
 int main(){
     vector<char>v;
-    v.push_back('a');
-    v.push_back('b');
-    v.push_back('c');
-    v.push_back('d');
-    v.push_back('e');
-    printvalue(v,2);
-    changevalue(v,2,'z');
-    cout<<v[2]<<endl; 
+    v.push_back('10');
+    v.push_back('30');
+    v.push_back('34');
+    v.push_back('67');
+    v.push_back('45');
+    
+   
+
     for(auto& x : v){
         cout<<x<<" " ;
     }
-
-    
     return 0;
 }
