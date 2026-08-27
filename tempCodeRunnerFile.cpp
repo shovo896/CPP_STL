@@ -1,0 +1,2 @@
+
+    cout<<v[id]<<endl;

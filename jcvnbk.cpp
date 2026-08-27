@@ -4,9 +4,14 @@ include<vector>
 using namespace std ; 
 
 
+// pass by value 
+// pass by reference
 
 
-void printvalue(vector<char>v,int id){
+
+
+
+void printvalue(vector<char>&v,int id){
     cout<<v[id]<<endl;
 }
 int main(){
