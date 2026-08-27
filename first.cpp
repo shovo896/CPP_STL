@@ -38,7 +38,22 @@ int main() {
         cout<<numbers[i]<<" " ;
     }
     cout<<endl;
-    
+
+
+    int ara[5]; 
+    ara[0] = 10;
+    ara[1] = 20;
+    ara[2] = 30;
+    ara[3] = 40;
+    ara[4] = 50;
+
+    for(int i = 0 ; i < 5 ; i++){
+        cout<<ara[i]<<" " ;
+    }
+    cout<<endl; 
+
+    cout <<*numbers.begin() << endl ; 
+    cout << *(numbers.end() - 1) << endl ;
 
     return 0;
 }
