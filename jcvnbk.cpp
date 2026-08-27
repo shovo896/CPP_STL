@@ -27,5 +27,8 @@ int main(){
     printvalue(v,2);
     changevalue(v,2,'z');
     cout<<v[2]<<endl; 
+    for(auto& x : v){
+        cout<<x<<" " ;
+    }
     return 0;
 }
