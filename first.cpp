@@ -58,7 +58,11 @@ int main() {
     cout <<*numbers.begin() << endl ;
     cout << *(numbers.end() - 1) << endl ;
 // pop hoilo last number ta re ber kore dewa
-    cout << "size of numbers :" << numbers[numbers.size() - 1] << endl ; 
+    cout << "size of numbers :" << numbers[numbers.size() - 1] << endl ;
+    for(int i =0 ; i < numbers.size() ; i++){
+        cout<<numbers[i]<<" " ;
+    } 
+    cout<<endl;
 
     return 0;
 }
