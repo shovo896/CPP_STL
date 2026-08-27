@@ -57,6 +57,7 @@ int main() {
     numbers.pop_back() ;
     cout <<*numbers.begin() << endl ;
     cout << *(numbers.end() - 1) << endl ;
+// pop hoilo last number ta re ber kore dewa 
 
     return 0;
 }
