@@ -64,5 +64,9 @@ int main() {
     } 
     cout<<endl;
 
+
+    cout<<*(numbers.begin()) <<endl ; 
+    
+
     return 0;
 }
