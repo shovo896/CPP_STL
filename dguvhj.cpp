@@ -24,12 +24,14 @@ int main(){
     v.push_back('67');
     v.push_back('45');
 
-    
+
     
    
 
     for(auto& x : v){
         cout<<x<<" " ;
     }
+
+    sort(v.begin(),v.end()) ;
     return 0;
 }
