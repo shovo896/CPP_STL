@@ -34,11 +34,14 @@ int main(){
 
     //sort(v.begin()+2,v.end()) ;
     sort(v.begin(),v.end()) ;
-    unique(v.begin(),v.end()) ; 
+    unique(v.begin(),v.end()) ;
+//v.erase(unique(v.begin(),v.end()),v.end()) ;
+    auto it = unique(v.begin(),v.end()) ;
+    v.erase(it,v.end()) ;
     for(auto& x : v){
         cout<<x<<" " ;
     }
-    
+
 
 
     return 0;
