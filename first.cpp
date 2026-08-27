@@ -65,8 +65,8 @@ int main() {
     cout<<endl;
 
 
-    cout<<*(numbers.begin()) <<endl ; 
-    
+    cout<<*(numbers.begin()+3) <<endl ; 
+
 
     return 0;
 }
