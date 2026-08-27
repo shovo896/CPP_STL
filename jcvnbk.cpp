@@ -11,8 +11,11 @@ using namespace std ;
 
 
 
-void printvalue(vector<char>&v,int id){
+void printvalue(const vector<char>&v,int id){
     cout<<v[id]<<endl;
+}
+void changevalue(vector<char>&v,int id,char value){
+    v[id] = value;
 }
 int main(){
     vector<char>v;
@@ -22,5 +25,7 @@ int main(){
     v.push_back('d');
     v.push_back('e');
     printvalue(v,2);
+    changevalue(v,2,'z');
+    cout<<v[2]<<endl; 
     return 0;
 }
