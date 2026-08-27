@@ -38,7 +38,7 @@ int main(){
        i = j ; 
 
     }
-    // use v.clear() to clear the vector v
+    // use v.clear() to clear the vector v this is an order of O(n) operation
 
     for(auto& x : unique_vec){
         cout<<x<<endl; 
