@@ -11,5 +11,13 @@ int main(){
     cout<<endl ;
 
     // dhet 
+    // erase function 
+
+    numbers.erase(numbers.begin() + 2) ;
+    cout<< "size of numbers : " << numbers.size() << endl ;
+    for(int i=0;i<numbers.size();i++){
+        cout<<numbers[i]<<" " ;
+    }
+    cout<<endl ;
     return 0 ; 
 }
