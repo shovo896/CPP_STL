@@ -54,6 +54,9 @@ int main() {
 
     cout <<*numbers.begin() << endl ; 
     cout << *(numbers.end() - 1) << endl ;
+    numbers.pop_back() ;
+    cout <<*numbers.begin() << endl ;
+    cout << *(numbers.end() - 1) << endl ;
 
     return 0;
 }
