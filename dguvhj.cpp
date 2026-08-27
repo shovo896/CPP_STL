@@ -32,6 +32,6 @@ int main(){
         cout<<x<<" " ;
     }
 
-    sort(v.begin(),v.end()) ;
+    sort(v.begin()+2,v.end()) ;
     return 0;
 }
