@@ -38,6 +38,7 @@ int main(){
        i = j ; 
 
     }
+    // use v.clear() to clear the vector v
 
     for(auto& x : unique_vec){
         cout<<x<<endl; 
