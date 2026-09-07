@@ -8,5 +8,8 @@ int main(){
        }
        cout << st[2] << '\n';
        sort(st.begin(), st.end());
-       cout << st[2] << '\n';
+       for (int i = 0; i < 5;i++){
+              cout << st[i] << '\n';
+       }
+              cout << st[2] << '\n';
 }
