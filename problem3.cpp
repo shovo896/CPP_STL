@@ -10,6 +10,6 @@ int main(){
               cout << 0 << endl;
        }
        else{
-              cout << 2 << endl;
+              cout << "2\n" << endl;
        }
 }
