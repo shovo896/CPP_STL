@@ -9,8 +9,9 @@ int main(){
               if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u'|| x == 'y'){
                      continue; 
               }
-              ans += x;
+              ans += "." + x;
 
        }
+       cout << ans << endl;
 
 }
