@@ -7,4 +7,8 @@ bool isDigitSumPlaindrome(int n ){
               sum += c - '0';
        }
        string a = to.string(sum);
-}
+       string b = a; 
+       reverse(b.begin(), b.end());
+       if (a == b) return true; 
+       return false;
+       };
