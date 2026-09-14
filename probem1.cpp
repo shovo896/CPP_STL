@@ -10,4 +10,8 @@ int main(){
               a.push_back(st);
 
        }
+       reverse(a.begin(), a.end());
+       for (auto st :a ){
+              cout <<st <<'n';
+       }
 }
