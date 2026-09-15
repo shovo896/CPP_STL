@@ -10,11 +10,11 @@ int cntVowel(string s){
        int main(){
               string s1, s2, s3;
               bool ans = true;
-              cin >> s1;
+              getline(cin, s1);
               if (cntVowel(s1)!=5) ans = false;
-              cin >> s2; 
+              getline(cin, s2); 
               if (cntVowel(s2)!=7) ans = false; 
-              cin >> s3; 
+              getline(cin, s3); 
               if (cntVowel(s3)!=5) ans = false; 
               if (ans) cout << "YES\n";
               else cout << "NO\n";
