@@ -7,16 +7,9 @@ int32_t main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
+    pair<int, int> aght[3];
+    for (int i = 0; i < 3;i++){
+       cin >> aght[i].first >> aght[i].second;
     }
-    sort(a.begin(), a.end());
-    int ans = 0;
-    for (int i = 0; i < n / 2; i++) {
-        ans += a[n - 1 - i] - a[i];
-    }
-    cout << ans << endl;
+    sort(aght, aght + 3);
 } 
