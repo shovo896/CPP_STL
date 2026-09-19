@@ -36,7 +36,9 @@ int main()
        pair < string, pair<double, int> person; 
        cin >> person.first; 
        cin >> person.second.first; 
-       cin >> person.second.second; 
+       cin >> person.second.second;
+       
+       cout<<mp[2]<<"\n";
 
        return 0;
 }
