@@ -29,6 +29,12 @@ int main(){
               string ageName; 
               cin >> age >> ageName;
               mp[age] = ageName;
+
+
        }
+
+       int qry; 
+       cin >> qry; 
+       cout << mp[qry] << "\n";
        return 0; 
 }
