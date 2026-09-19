@@ -14,6 +14,12 @@ int main(){
 
        }
        int qry; 
-       cin >> qry; 
+       cin >> qry;
        
+       // qry  ---> value Ki ???
+       for (int i = 0; i < 4;i ++){ 
+              a[i].first = qry;
+              cout << a[i].second << "\n";
+       }
+       return 0; 
 }
