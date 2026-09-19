@@ -28,7 +28,9 @@ int main(){
               int age;
               string ageName; 
               cin >> age >> ageName;
-              mp[age] = ageName;
+              mp[age] = ageName; 
+
+              // map is sorted
 
 
        }
@@ -38,6 +40,8 @@ int main(){
        cout << mp[qry] << "\n";//n=10^6 hoile login 20
        
        for (auto& it : mp){
+              cout << it.first << " " << it.second << "\n";
+              it.second = 9999;
               cout << it.first << " " << it.second << "\n";
        }
        return 0; 
