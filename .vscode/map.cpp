@@ -17,9 +17,14 @@ int main(){
        cin >> qry;
        
        // qry  ---> value Ki ???
-       for (int i = 0; i < 4;i ++){ 
-              a[i].first = qry;
-              cout << a[i].second << "\n";
+      // for (int i = 0; i < 4;i ++){ 
+             // a[i].first = qry;
+            //  cout << a[i].second << "\n";
+       //}
+       sort(a.begin(),a.end());
+
+       
+      
        }
        return 0; 
 }
