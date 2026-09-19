@@ -23,7 +23,7 @@ int32_t main(){
               for(int i =0 ; i< k && i < costs.size(); i++){
                      savings += costs[i];
 
-              cout << sa
+              }
+              cout << savings << "\n";
               }
        }
-}

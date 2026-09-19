@@ -10,17 +10,16 @@ int32_t main()
        int n;
        cin >> n;
        map<string, int> mp;
+       int maxVotes = 0;
        while (n--)
        {
               string vote; 
               cin >> vote;
               mp[vote]++;
+              maxVotes =max(maxVotes,mp[vote]);
               
        }
+       cout << maxVotes << "\n";
       
-       for(auto& it : mp)
-       {
-              cout << it.first << " " << it.second << "\n";
-       }
        return 0;
 }
