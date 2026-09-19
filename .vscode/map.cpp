@@ -1,6 +1,19 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
+#define int long long 
+#define ll long long 
+
+
 using namespace std; 
 
 int main(){
+       ios_base :: sync_with_stdio(0),cin.tie(0),cout.tie(0);
+       vector<pair<int ,string>> a[4];
+       for (int i = 0; i < 4; i++){
+              cin >> a[i].first >> a[i].second;
+
+
+       }
+       int qry; 
+       cin >> qry; 
        
 }
