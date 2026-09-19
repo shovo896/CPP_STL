@@ -11,17 +11,26 @@ int main()
 
        map<int, string> mp;
 
-       for (int i = 0; i < n; i++)
-       {
-              int x;
-              string y;
-              cin >> x >> y;
-              mp[x] = y;
-       }
+       //for (int i = 0; i < n; i++)
+       //{
+           //   int x;
+             // string y;
+             // cin >> x >> y;
+             // mp[x] = y;
+       //}
 
-       for (const auto &it : mp)
+       //for (const auto &it : mp)
+       //{
+           //   cout << it.first << ' ' << it.second << '\n';
+       //}
+
+       mp.insert(3,4);
+       mp.insert(2,3);
+       mp.insert(3,4);
+
+       for(auto& it : mp)
        {
-              cout << it.first << ' ' << it.second << '\n';
+              cout << it.first << " " << it.second << "\n";
        }
 
        return 0;
