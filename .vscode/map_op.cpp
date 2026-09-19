@@ -16,4 +16,12 @@ int main(){
        cout << mp[10] << "\n";
 
        //cout << mp[0] << "\n"; // 0
-}
+
+       // iteration through map 
+       cout <<mp[2] << "\n"; // 0
+
+       for(auto& it : mp){
+              //cout << it.first << " " << it.second << "\n";
+       }
+
+       // map e kono index nai to 
