@@ -23,8 +23,12 @@ int main(){
        //}
       // sort(a.begin(),a.end());
 
-       map<int, string> mp; 
-       
+       map<int, string> mp;
+       for (int i = 0; i < 4; i++){
+              int age;
+              string ageName; 
+              cin >> age >> ageName;
+              mp[age] = ageName;
        }
        return 0; 
 }
