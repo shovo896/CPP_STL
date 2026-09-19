@@ -28,6 +28,16 @@ int main()
        mp.insert(2,3);
        mp.insert(3,4);
 
+       // check exist or not 
+
+       if (mp.find(3) != mp.end()){
+              cout <<"2 does not exist in the map\n";
+
+       }
+       else {
+              cout <<"2d does not exist"
+       }
+
        for(auto& it : mp)
        {
               cout << it.first << " " << it.second << "\n";
