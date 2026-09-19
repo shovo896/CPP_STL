@@ -22,6 +22,10 @@ int main(){
 
        for(auto& it : mp){
               //cout << it.first << " " << it.second << "\n";
+
+              cout << it.first << " " << it.second << "\n";
+
+
        }
 
        // map e kono index nai to 
