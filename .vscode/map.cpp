@@ -21,10 +21,10 @@ int main(){
              // a[i].first = qry;
             //  cout << a[i].second << "\n";
        //}
-       sort(a.begin(),a.end());
+      // sort(a.begin(),a.end());
 
+       map<int, string> mp; 
        
-      
        }
        return 0; 
 }
