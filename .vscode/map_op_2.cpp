@@ -33,5 +33,10 @@ int main()
               cout << it.first << " " << it.second << "\n";
        }
 
+       pair < string, pair<double, int> person; 
+       cin >> person.first; 
+       cin >> person.second.first; 
+       cin >> person.second.second; 
+
        return 0;
 }
