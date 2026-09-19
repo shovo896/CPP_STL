@@ -35,6 +35,6 @@ int main(){
 
        int qry; 
        cin >> qry; 
-       cout << mp[qry] << "\n";
+       cout << mp[qry] << "\n";//n=10^6 hoile login 20 
        return 0; 
 }
