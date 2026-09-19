@@ -39,5 +39,10 @@ int32_t main() {
     cin >> person.first >> person.second;
     cout <<person.first << "" << person.second << "\n";
 
+    pair < string, pair<int, int> person;
+    cin >> person.first;
+    cin >> person.second.first; 
+    cin >> person.second.second;
+    cout << person.first << "" << person.second.first << "" << person.second.second << "\
 
     return 0; 
