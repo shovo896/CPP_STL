@@ -19,8 +19,11 @@ int32_t main(){
        for(auto& it : mp ){
               costs.push_back(it.second);
               int savings = 0 ; 
+              sort(costs.rbegin(), costs.rend());
               for(int i =0 ; i< k && i < costs.size(); i++){
                      savings += costs[i];
+
+              cout << sa
               }
        }
 }
