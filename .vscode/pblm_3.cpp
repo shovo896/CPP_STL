@@ -15,7 +15,12 @@ int32_t main(){
               cin >> friendName >> giftVal;
               mp[friendName] = giftVal;
        }
+       vector<int> costs; 
        for(auto& it : mp ){
-              cout << it.first << " " << it.second << "\n";
+              costs.push_back(it.second);
+              int savings = 0 ; 
+              for(int i =0 ; i< k && i < costs.size(); i++){
+                     savings += costs[i];
+              }
        }
 }
