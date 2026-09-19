@@ -15,5 +15,14 @@ int32_t main() {
     for (int i = 0; i < 3;i++){
            cout << aght[i].first << "" << aght[i].second << "\n";
     }
-    return 0;
+
+    int aght[3][2];
+    for (int i = 0; i < 3; i++){
+       cout << aght[i].first<<""<<aght[i].second<<"\n";
+       sort(aght, aght + 3);
+       for (int i = 0; i < 3; i++){
+              cout << aght[i][0]<<""<<aght[i].second<<"\n";
+       }
+    }
+           return 0;
 } 
