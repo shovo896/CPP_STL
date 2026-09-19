@@ -12,4 +12,8 @@ int32_t main() {
        cin >> aght[i].first >> aght[i].second;
     }
     sort(aght, aght + 3);
+    for (int i = 0; i < 3;i++){
+           cout << aght[i].first << "" << aght[i].second << "\n";
+    }
+    return 0;
 } 
