@@ -16,12 +16,12 @@ int32_t main() {
            cout << aght[i].first << "" << aght[i].second << "\n";
     }
 
-    int aght[3][2];
+    vector<vector<int>> aght(3,vector<int>(2));
     for (int i = 0; i < 3; i++){
        cin >> aght[i][0] >> aght[i][1];
     }
     for (int i = 0; i < 3; i++){
-       cout << aght[i][0]<<""<<aght[i][1]<<"\n";
+       cout << aght[i][0]<<""<< aght[i][1]<<"\n";
        sort(aght, aght + 3);
        for (int i = 0; i < 3; i++){
               cout << aght[i][0]<<""<<aght[i][1]<<"\n";
