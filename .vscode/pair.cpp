@@ -45,4 +45,7 @@ int32_t main() {
     cin >> person.second.second;
     cout << person.first << "" << person.second.first << "" << person.second.second << "\
 
-    return 0; 
+    return 0;
+    
+    
+    } 
