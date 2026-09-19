@@ -35,6 +35,10 @@ int main(){
 
        int qry; 
        cin >> qry; 
-       cout << mp[qry] << "\n";//n=10^6 hoile login 20 
+       cout << mp[qry] << "\n";//n=10^6 hoile login 20
+       
+       for (auto& it : mp){
+              cout << it.first << " " << it.second << "\n";
+       }
        return 0; 
 }
