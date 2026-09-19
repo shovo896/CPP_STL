@@ -31,5 +31,13 @@ int32_t main() {
     for (int i = 0; i < 3; i++){
            cout << aght[i][0]<< ""<< aght[i][1]<<"\n";
     }
-           return 0;
-} 
+
+    // mltitype variables
+
+
+    pair < string, int > person;
+    cin >> person.first >> person.second;
+    cout <<person.first << "" << person.second << "\n";
+
+
+    return 0; 
