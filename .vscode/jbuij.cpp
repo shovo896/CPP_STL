@@ -1,7 +1,7 @@
 #include<bits/stdc++.h> 
 using namespace std;
 int main(){
-       set <int> st ;
+       multiset <int> st ;
        st.insert(1);
        st.insert(2);
        st.insert(3);
