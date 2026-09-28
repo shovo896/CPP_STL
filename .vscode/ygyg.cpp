@@ -13,5 +13,10 @@ int main(){
        }
        cout << endl;
 
+       for (auto it =st.begin(); it != st.end(); it++){
+              cout << *it << " ";
+       }
+       cout << endl;
+
        return 0;
 }
