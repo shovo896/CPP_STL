@@ -9,7 +9,7 @@ int main()
        st.insert(4);
        st.insert(5);
        st.insert(6);
-       auto it = st.lower_bound(4);
+       auto it = st.upper_bound(4);
        it--; 
        cout <<*it <<endl;
        return 0; 
