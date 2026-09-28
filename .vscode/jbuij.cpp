@@ -14,6 +14,7 @@ int main(){
               cout << *it << " ";
        }
        cout << *it << " ";
+       cout << endl;
 
        auto it1 = st.end();
        it1--;

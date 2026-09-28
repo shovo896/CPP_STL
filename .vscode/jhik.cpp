@@ -9,6 +9,7 @@ int main()
        st.insert(4);
        st.insert(5);
        st.insert(6);
+       st.insert(7);
        cout <<st.size() << endl;
        auto it = st.upper_bound(4);
        it--; 
