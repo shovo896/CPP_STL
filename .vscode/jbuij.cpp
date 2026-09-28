@@ -14,5 +14,15 @@ int main(){
               cout << *it << " ";
        }
        cout << *it << " ";
-       return 0;
+
+       auto it1 = st.end();
+       it1--;
+       for (;;it1 --){
+              cout << *it1 << endl;
+              if (it1 == st.begin()){
+                     break;
+              }
+              
+       }
+              return 0;
 } 
