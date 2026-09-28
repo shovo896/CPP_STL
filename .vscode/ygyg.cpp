@@ -18,5 +18,12 @@ int main(){
        }
        cout << endl;
 
+       st.erase(3);
+       cout << "After erasing 3 : " << endl;
+       for(auto x :st){
+              cout << x << " ";
+       }
+       cout << endl;
+
        return 0;
 }
