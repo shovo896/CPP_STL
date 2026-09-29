@@ -8,8 +8,9 @@ int main(){
        st.insert(4);
        st.insert(5);
        st.insert(6);
+       auto it = st.lower_bound(4);
 
-       st.erase(3);
+       st.erase(it);
        auto it = st.end();
        it--;
        for (; it != st.begin(); it--){
