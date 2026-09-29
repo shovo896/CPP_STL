@@ -28,5 +28,7 @@ int main(){
               }
               
        }
-              return 0;
+       auto it = st.lower_bound(12, -1); 
+       cout << it -> first << " " << it -> second << endl;
+       return 0;
 } 
