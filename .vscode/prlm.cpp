@@ -6,7 +6,9 @@ int main(){
        set <int> row ,col;
        for (int i = 0, r, c; i < m;i++){
               cin >> r >> c; 
-              badRow.insert(r);
-              badCol.insert(c);
+              row.insert(r);
+              col.insert(c);
+              cout << (n - row.size()) * (n - col.size()) << "\n";
+             
        } 
 }
