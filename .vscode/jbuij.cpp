@@ -8,6 +8,8 @@ int main(){
        st.insert(4);
        st.insert(5);
        st.insert(6);
+
+       st.erase(3);
        auto it = st.end();
        it--;
        for (; it != st.begin(); it--){
