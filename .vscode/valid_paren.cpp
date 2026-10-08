@@ -13,6 +13,32 @@ int main(){
        cin.tie(0);
        int t = 1; 
         while(t--){
-               ll, a, b b, c, i, j, k, m, n, o, x, y, z; 
+               ll, a, b b, c, i, j, k, m, n, o, x, y, z;
+               string s;
+               cin >> s; 
+
+               stack <char> rbs;
+               bool flag = true;
+               for (i = 0; i < s.size();i++){
+                      if(s[i]== '('){ 
+                            rbs.push('(');
+                      }
+                      else { 
+                            if (rbs.size() > 0) {
+                                   rbs.pop();
+                            }else {
+                                   flag = false;
+                                   break;
+                            }
+
+                            if (flag == true ){ 
+                                   cout << "YES\n";
+                            }
+                            else { 
+                                   cout << "no\n";
+                            }
+                      }
+
+               }
         }
 }
