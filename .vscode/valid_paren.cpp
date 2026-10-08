@@ -31,6 +31,10 @@ int main(){
                                    break;
                             }
 
+                            if (rbs.size()){ 
+                                   flag = false;
+                            }
+
                             if (flag == true ){ 
                                    cout << "YES\n";
                             }
