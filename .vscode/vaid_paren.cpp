@@ -1,7 +1,19 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 int main() {
-       int a, b; 
-       cin >> a >> b; 
-       cout << a + b << "\n"; 
+       ios_base::sync_with_stdio(0); 
+       cin.tie(0); 
+       int t =1 ; 
+       cin >> t; 
+       while(t--){
+              ll a, b, c, i, j, k, m, n, o, x, y, z; 
+              stack <string> fwd,bwd;
+              string op ;
+              cin >> op;
+              
+              while(cin >> op && op != "QUIT"){ 
+                     
+              }
+
+       }
 }
