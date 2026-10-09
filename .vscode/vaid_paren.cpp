@@ -12,7 +12,15 @@ int main() {
               cin >> op;
               
               while(cin >> op && op != "QUIT"){ 
-                     
+                     if (op == "VISIT"){
+                            string url; 
+                            cin >> url;  
+                           while(fwd.size()){ 
+                                  fwd.pop();
+                           }
+
+                     }
+
               }
 
        }
