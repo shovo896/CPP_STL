@@ -19,6 +19,7 @@ int main() {
                                   fwd.pop();
                            }
                            bwd .push(url);
+                           cout << url << "\n"; 
 
                      }
                      else if (op == " Forward"){
