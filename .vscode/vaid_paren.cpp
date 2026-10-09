@@ -9,8 +9,9 @@ int main() {
               ll a, b, c, i, j, k, m, n, o, x, y, z; 
               stack <string> fwd,bwd;
               string op ;
-              bwd.push("http://www.lightoj.com/");
-              
+              string tmp = "http://www.lightoj.com/"; 
+              bwd.push(tmp);
+
               while(cin >> op && op != "QUIT"){ 
                      if (op == "VISIT"){
                             string url; 
