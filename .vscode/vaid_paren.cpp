@@ -22,7 +22,30 @@ int main() {
 
                      }
                      else if (op == " Forward"){
-                            
+                            if (fwd.size()==0){ 
+                                   cout << "Ignored\n";
+                            }
+                            else { 
+                                   string tmp  = fwd.top();
+                                   fwd.pop();
+                                   bwd.push(tmp); 
+
+                            }
+                            else if(op== "Back") {
+                                   if (bwd.size()== 0 ){ 
+                                          cout << "Ignored\n"; 
+                                   }
+                                   else { 
+                                          string tmp = bwd.top();
+                                          bwd.pop();
+                                          fwd.push(tmp);
+                                   } 
+                                   else { 
+                                         break;  
+                                   }
+                                   
+                            }
+       
                      }
 
               }
