@@ -9,7 +9,7 @@ int main() {
               ll a, b, c, i, j, k, m, n, o, x, y, z; 
               stack <string> fwd,bwd;
               string op ;
-              cin >> op;
+              bwd.push("http://www.lightoj.com/");
               
               while(cin >> op && op != "QUIT"){ 
                      if (op == "VISIT"){
@@ -31,7 +31,8 @@ int main() {
                                    bwd.push(tmp); 
 
                             }
-                            else if(op== "Back") {
+                     }
+                     else if(op== "Back") {
                                    if (bwd.size()== 0 ){ 
                                           cout << "Ignored\n"; 
                                    }
@@ -50,5 +51,5 @@ int main() {
 
               }
 
+
        }
-}
