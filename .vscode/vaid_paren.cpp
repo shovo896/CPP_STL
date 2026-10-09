@@ -35,7 +35,7 @@ int main() {
                             }
                      }
                      else if(op== "Back") {
-                                   if (bwd.size()== 0 ){ 
+                                   if (bwd.size()== 1){ 
                                           cout << "Ignored\n"; 
                                    }
                                    else { 
