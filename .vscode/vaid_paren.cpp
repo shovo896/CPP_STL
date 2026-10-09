@@ -18,7 +18,11 @@ int main() {
                            while(fwd.size()){ 
                                   fwd.pop();
                            }
+                           bwd .push(url);
 
+                     }
+                     else if (op == " Forward"){
+                            
                      }
 
               }
