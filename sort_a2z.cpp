@@ -45,8 +45,13 @@ int main(){
         pq.pop();
     }
     cout << '\n';
-}
 
+    reverse(a.begin(), a.end());
+    for(auto& it : a){
+        cout<<it<<" ";
+    }
+    cout << '\n';
+}
 
 int main(){ 
     ios::sync_with_stdio(0),cin.tie(0),cout.tie(0); 
