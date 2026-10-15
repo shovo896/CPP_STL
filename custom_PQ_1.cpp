@@ -5,6 +5,11 @@ using ll = long long;
 bool comp(int &x,int &y){
     return abs(x)>abs(y); 
 }
+struct customComp{
+    bool operator()(int &x,int &y){
+        return abs(x)>abs(y); 
+    }
+};
 void Solve(){
     int n; 
     cin >> n; 
