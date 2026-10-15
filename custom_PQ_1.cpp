@@ -7,6 +7,10 @@ bool comp(int &x,int &y){
 }
 struct customComp{
     bool operator()(int &x,int &y){
+        if (abs(x) == abs(y)){
+            return x>y;   // 1 ,-1  // but pq te ulta 
+            
+        }
         return abs(x)>abs(y); 
     }
 };
