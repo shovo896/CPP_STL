@@ -24,8 +24,8 @@ void Solve(){
         cout << max3 << "\n"; 
 
 
-        cout << max1*max2*max3 << "\n";
         
+
 
 
 
@@ -33,6 +33,10 @@ void Solve(){
 
         // index 1 to i ----> max 3 numbers 
         cout << pq.top() << " ";
+        cout << max1*max2*max3 << "\n";
+        pq.push(max1);
+        pq.push(max2);
+        pq.push(max3);
 
     }
 }
