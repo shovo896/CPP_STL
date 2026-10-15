@@ -1,46 +1,37 @@
-#include<iostream> 
-using namespace std;
-using ll = long long; 
-#define int long long
-void Solve(){
-    int n; 
-    cin >> n; 
-    int a[n];
-    for(auto& it : a){
-        cin >> it; 
+#include<bits/stdc++.h> 
+int main(){
+    queue<int> q;
+    for(auto& it : array){
+        q.push(it);
     }
+    while(!q.empty()){
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    cout << '\n';
+
+
     priority_queue<int> pq;
-
-    for(int i= 1;i<=n;i++){
-        int x; 
-        cin >> x; 
-        pq.push(-x);
-        if (i <= 2 ){ 
-            cout << "-1\n";
-            continue; 
-        }
-        int max1 = pq.top();
-        pq.top(); pq.pop();
-        int max2 = pq.top();
-        cout<< max2 << "\n"; 
-        pq.pop();
-        int max3 = pq.top(); 
-        cout << max3 << "\n"; 
-
-
+    multiset<int> s;
+    for(auto& it : array){
+        s.insert(it);
+        cout << *s.rbegin() << " ";
         
-
-
-
-
-
-
-        // index 1 to i ----> max 3 numbers 
+        pq.push(it);
         cout << pq.top() << " ";
-        cout << max1*max2*max3 << "\n";
-        pq.push(max1);
-        pq.push(max2);
-        pq.push(max3);
+        // top priority 
 
     }
+    while(!pq.empty()){
+        cout<<pq.top()<<" ";
+        pq.pop();
+    }
+    cout << '\n';
+}
+
+
+int main(){ 
+    ios::sync_with_stdio(0),cin.tie(0),cout.tie(0); 
+    int t = 1 ; 
+
 }
