@@ -19,10 +19,10 @@ void Solve(){
         pq.top(); pq.pop();
         int max2 = pq.top();
         cout<< max2 << "\n"; 
-        pq.push(max1);
+        pq.pop();
         int max3 = pq.top(); 
         cout << max3 << "\n"; 
-        
+
 
 
 
