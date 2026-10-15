@@ -12,11 +12,15 @@ int main(){
 
 
     priority_queue<int> pq;
+    multiset<int> s;
     for(auto& it : array){
+        s.insert(it);
+        cout << *s.rbegin() << " ";
+        
         pq.push(it);
         cout << pq.top() << " ";
         // top priority 
-        
+
     }
     while(!pq.empty()){
         cout<<pq.top()<<" ";
