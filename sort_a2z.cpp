@@ -3,19 +3,28 @@ int main(){
     int n ; 
     cin >> n ; 
     vector<int> a(n);
-    
+
     for(auto& it : a){
         cin >> it ; 
     }
+    for(auto& it : a){
+        cout<<it<<" ";
+    }
+    cout << '\n';
 
     priority_queue<int> pq;
 
     for(auto& it : array){
         q.push(it);
     }
+    a.clear();
     while(!q.empty()){
-        cout<<q.front()<<" ";
+       // cout<<q.front()<<" ";
+        a.push_back(q.top());
         q.pop();
+    }
+    for (auto& it : a){
+        cout<<it<<" ";
     }
     cout << '\n';
 
