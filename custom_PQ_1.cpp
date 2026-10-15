@@ -12,9 +12,9 @@ void Solve(){
     for(auto& it : a){
         cin >> it;
     }
-    sort(a,a+n,[](int x,int& y){
+    sort(a,a+n,comp);
         return abs(x)>abs(y); 
-    });
+    };
 
     for (auto& it : a){
         cout<<it<<" ";
