@@ -1,6 +1,12 @@
 #include<bits/stdc++.h> 
 int main(){
-    queue<int> q;
+    int n ;
+    cin >> n ;
+    for (auto& it : array){
+        cin >> it ;
+    }
+
+    priority_queue<int,vector<int>,greater<int>> q;
     for(auto& it : array){
         q.push(it);
     }
