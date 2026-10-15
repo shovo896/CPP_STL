@@ -24,6 +24,10 @@ void Solve(){
         cout << max3 << "\n"; 
 
 
+        cout << max1*max2*max3 << "\n";
+        
+
+
 
 
 
