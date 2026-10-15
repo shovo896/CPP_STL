@@ -2,7 +2,8 @@
 int main(){
     int n ; 
     cin >> n ; 
-    int a[n];
+    vector<int> a(n);
+    
     for(auto& it : a){
         cin >> it ; 
     }
