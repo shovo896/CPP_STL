@@ -19,5 +19,9 @@ void solve(){
         int smoll1 = pq.top(); 
         pq.pop();
         int smoll2 = pq.top(); 
+        pq.pop();
+        ans += (smoll1 + smoll2);
+        pq.push(smoll1 + smoll2);
     }
+    cout << ans << "\n";
 }
