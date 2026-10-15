@@ -5,12 +5,16 @@ using ll = long long;
 void Solve(){
     int n; 
     cin >> n; 
+    int a[n];
+    for(auto& it : a){
+        cin >> it; 
+    }
     priority_queue<int> pq;
 
     for(int i= 1;i<=n;i++){
         int x; 
         cin >> x; 
-        pq.push(x);
+        pq.push(-x);
         if (i <= 2 ){ 
             cout << "-1\n";
             continue; 
