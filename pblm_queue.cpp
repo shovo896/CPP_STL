@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<iostream> 
 using namespace std;
 using ll = long long; 
 #define int long long
@@ -11,9 +11,14 @@ void Solve(){
         int x; 
         cin >> x; 
         pq.push(x);
+        if (i <= 2 ){ 
+            cout << "-1\n";
+            continue; 
+        }
 
 
         // index 1 to i ----> max 3 numbers 
         cout << pq.top() << " ";
+
     }
 }
