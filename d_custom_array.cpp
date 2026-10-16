@@ -16,6 +16,14 @@ struct comp {
         return x.first > y.first;
     }
 };
+void printPriorityQueue(priority_queue<pair<int, int>, vector<pair<int, int>>, comp> pq) {
+    while (!pq.empty()) {
+        auto [l, r] = pq.top();
+        cout << "[" << l << ", " << r << "] ";
+        pq.pop();
+    }
+    cout << "\n";
+}
 
 void solve() {
     int n;
