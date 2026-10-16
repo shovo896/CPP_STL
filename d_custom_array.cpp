@@ -5,6 +5,8 @@
 
 using namespace std;
 
+
+
 // Larger intervals have higher priority; for equal lengths, choose the leftmost.
 struct comp {
     bool operator()(const pair<int, int>& x, const pair<int, int>& y) const {
@@ -19,7 +21,11 @@ void solve() {
     int n;
     cin >> n;
 
-    vector<int> a(n + 1);
+
+
+    int a[n + 1];  {
+
+    };
     priority_queue<pair<int, int>, vector<pair<int, int>>, comp> pq;
     pq.push({1, n});
 
