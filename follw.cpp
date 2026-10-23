@@ -12,7 +12,7 @@ printLastDigit(n / 10) ;
 
 void printFirstDigit(int n ){
 if (n < 10) {
-    cout << n << endl ;
+    
     return ;
 }
 printFirstDigit(n / 10) ;
@@ -23,6 +23,6 @@ printFirstDigit(n / 10) ;
 
 int  main(){
     int n = 246135 ; 
-    printLastDigit(n) ;
+    printFirstDigit(n) ;
     return 0 ;
 }
