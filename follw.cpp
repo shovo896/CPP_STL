@@ -1,5 +1,15 @@
 #include<iostream> 
 using namespace std ; 
+
+
+void printLastDigit(int n ){ 
+    cout << n % 10 <<endl ;
+    printLastDigit(n / 10) ;
+}
+
+
+
+
 int  main(){
     int n = 246135 ; 
     while(n > 0 ){ 
