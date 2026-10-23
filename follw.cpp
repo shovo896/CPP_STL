@@ -10,6 +10,15 @@ printLastDigit(n / 10) ;
 }
 
 
+void printFirstDigit(int n ){
+if (n < 10) {
+    cout << n << endl ;
+    return ;
+}
+printFirstDigit(n / 10) ;
+}
+
+
 
 
 int  main(){
