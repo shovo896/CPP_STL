@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1792848032.9111 "/Users/Shared/CPP_STL/latex_sample.tex" "out/latex_sample.pdf" "latex_sample" 1792848033.04517 0
+["pdflatex"] 1792848377.91787 "/Users/Shared/CPP_STL/latex_sample.tex" "out/latex_sample.pdf" "latex_sample" 1792848378.13046 0
   "/Users/Shared/CPP_STL/latex_sample.tex" 1792848032.51459 515 73d2179ba3c9045e8f37ccea3ba4331c ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -27,7 +27,7 @@
   "/usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1772405612 2966183 588a2f29d0aaf280e3a142a37c2dd621 ""
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "latex_sample.tex" 1792848032.51459 515 73d2179ba3c9045e8f37ccea3ba4331c ""
-  "out/latex_sample.aux" 1792848033.01448 335 621ee63df2095c3c31d27d62863a5212 "pdflatex"
+  "out/latex_sample.aux" 1792848378.09453 335 621ee63df2095c3c31d27d62863a5212 "pdflatex"
   (generated)
   "out/latex_sample.aux"
   "out/latex_sample.log"
