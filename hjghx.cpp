@@ -17,5 +17,7 @@ bool pabeKina(vector<int> &coins , int target){
 int main(){
     vector<int> coins = {1, 2, 5};
     cout << pabeKina(coins, 10) << endl;
+    cout << pabeKina(coins, 3) << endl;
+    cout << pabeKina(coins, 7) << endl;
     return 0;
 }
