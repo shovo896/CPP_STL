@@ -5,6 +5,9 @@ bool pabeKina(vector<int> &coins , int target){
      if (target == 0){
         return true;
      }
+     if (target < 0){
+        return false;
+     }
 
      cout << "target: " << target << endl;
      if (target < 0){
