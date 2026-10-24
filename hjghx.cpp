@@ -1,4 +1,5 @@
 #include<iostream> 
+#include<vector>
 using namespace std; 
 bool pabeKina(vector<int> &coins , int target){ 
      if (target == 0){
