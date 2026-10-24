@@ -1,0 +1,203 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+
+\title{CPP\_STL Project Note}
+\author{C++ STL and Algorithm Practice Workspace}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Project Overview}
+
+The \texttt{CPP\_STL} project is a hands-on C++ learning workspace. Its goal is
+to practise the Standard Template Library (STL), fundamental algorithms,
+recursion, sorting, and competitive-programming style problem solving. The
+repository currently contains 40 C++ source files. These files are mostly small,
+independent exercises rather than one combined application.
+
+The project is useful for learning how to select a data structure, translate an
+algorithm into C++, read input efficiently, and reason about time complexity.
+
+\section{Tools and Environment}
+
+\begin{itemize}
+    \item Language: C++
+    \item Typical compiler: \texttt{g++} with the C++17 standard
+    \item Editor: VS Code or VSCodium
+    \item Documentation build: LaTeX Workshop with \texttt{latexmk}
+    \item Main library: the C++ Standard Template Library (STL)
+\end{itemize}
+
+For a normal C++ source file, a useful compile command is:
+
+\begin{verbatim}
+g++ -std=c++17 -Wall -Wextra -Wpedantic filename.cpp -o program
+./program
+\end{verbatim}
+
+\section{Topics Covered}
+
+\subsection{Input, Output, and Arrays}
+
+Several files demonstrate basic input/output, arrays, and vectors. Examples
+include \texttt{first.cpp}, \texttt{djsn.cpp}, \texttt{dguvhj.cpp},
+\texttt{jcvnbk.cpp}, and \texttt{stl.cpp}. The key ideas are reading values
+with \texttt{cin}, printing with \texttt{cout}, traversing elements with loops,
+and using \texttt{vector} when the size should be managed safely at runtime.
+
+\subsection{STL Containers}
+
+The project explores common STL containers and their intended use:
+
+\begin{itemize}
+    \item \texttt{vector}: dynamic contiguous storage and indexed access.
+    \item \texttt{queue}: first-in, first-out processing.
+    \item \texttt{stack}: last-in, first-out processing.
+    \item \texttt{set} and \texttt{multiset}: ordered unique or repeated values.
+    \item \texttt{map}: ordered key--value storage.
+    \item \texttt{priority\_queue}: repeated access to the highest-priority item.
+\end{itemize}
+
+Files such as \texttt{sort\_a2z.cpp}, \texttt{pblm\_queue.cpp},
+\texttt{priotrity\_quque.cpp}, \texttt{custom\_PQ.cpp}, and
+\texttt{custom\_PQ\_1.cpp} focus on container behaviour and priority queues.
+
+\subsection{Sorting and Custom Comparison}
+
+Sorting is a recurring theme. The standard form is:
+
+\begin{verbatim}
+sort(values.begin(), values.end());
+\end{verbatim}
+
+For a special order, C++ accepts a comparator. A comparator determines which
+element has higher priority or should appear first. This is especially important
+for \texttt{priority\_queue}, where the ordering rules can be different from a
+normal sorted array.
+
+\subsection{Recursion}
+
+The files \texttt{recursion.cpp}, \texttt{power.cpp}, \texttt{power\_extenc.cpp},
+and \texttt{hjghx.cpp} practise recursive thinking. Typical examples include
+factorial, exponentiation, and checking whether a target value can be formed
+from a collection of coin values. Every recursive algorithm needs a correct
+base case and a step that reduces the problem size.
+
+\section{Core Algorithm: Custom Interval Array Construction}
+
+The most complete algorithmic implementation is \texttt{d\_custom\_array.cpp}.
+It constructs an array by repeatedly selecting the longest still-empty interval,
+placing the next value at its middle, and splitting that interval into two
+smaller intervals.
+
+\subsection{Algorithm Steps}
+
+\begin{enumerate}
+    \item Start with the interval \texttt{[1, n]}.
+    \item Store active intervals in a \texttt{priority\_queue}.
+    \item Give higher priority to a longer interval.
+    \item If two intervals have equal length, choose the leftmost one.
+    \item Place the next number at the middle position. For an even-length
+          interval, the implementation uses the left of the two middle cells.
+    \item Push the non-empty left and right subintervals back into the queue.
+    \item Continue until every array position has received a value.
+\end{enumerate}
+
+The comparator captures the selection rule:
+
+\begin{verbatim}
+if (len1 != len2) return len1 < len2;
+return x.first > y.first;
+\end{verbatim}
+
+This makes a larger interval appear at the top of the priority queue. If the
+lengths match, the interval with the smaller left endpoint is selected first.
+
+\subsection{Complexity}
+
+There are \(n\) placements. Each interval insertion or removal from the
+priority queue costs \(O(\log n)\). Therefore, the overall complexity is
+\(O(n \log n)\), while the auxiliary storage is \(O(n)\).
+
+\section{Important Source Files}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{File} & \textbf{Main learning objective} \\
+\hline
+\texttt{d\_custom\_array.cpp} & Priority queue, comparator, interval splitting \\
+\hline
+\texttt{stl.cpp} & Basic string input and string size \\
+\hline
+\texttt{sort\_a2z.cpp} & Sorting, reversing, multiset, priority queue \\
+\hline
+\texttt{custom\_PQ.cpp} & Priority queue experiments \\
+\hline
+\texttt{custom\_PQ\_1.cpp} & Custom ordering with comparators \\
+\hline
+\texttt{pblm\_queue.cpp} & Stream processing with a priority queue \\
+\hline
+\texttt{recursion.cpp} & Recursive factorial \\
+\hline
+\texttt{power.cpp} & Iterative exponentiation \\
+\hline
+\texttt{power\_extenc.cpp} & Recursive exponentiation \\
+\hline
+\texttt{hjghx.cpp} & Recursive target/coin search \\
+\hline
+\end{tabular}
+\end{center}
+
+Other practice files include \texttt{fibonbaci.cpp}, \texttt{follw.cpp},
+\texttt{probem1.cpp}, \texttt{problem2.cpp}, \texttt{problem3.cpp},
+\texttt{problem4.cpp}, \texttt{problem5.cpp}, \texttt{problem\_3.cpp},
+\texttt{problen4.cpp}, \texttt{tgt.cpp}, and several short experimental files.
+
+\section{Current Project Structure}
+
+\begin{verbatim}
+CPP_STL/
+|-- d_custom_array.cpp       # interval-priority algorithm
+|-- custom_PQ.cpp            # priority queue practice
+|-- custom_PQ_1.cpp          # custom comparator practice
+|-- sort_a2z.cpp             # sorting and STL experiments
+|-- recursion.cpp            # recursion example
+|-- power.cpp                # iterative power
+|-- power_extenc.cpp         # recursive power
+|-- pblm_queue.cpp           # priority queue problem practice
+|-- latex_sample.tex         # minimal LaTeX example
+`-- CPP_STL_Project_Note.tex # this report
+\end{verbatim}
+
+\section{Code Quality Notes}
+
+This is an educational workspace, so some files are incomplete drafts or
+experiments. Before submitting a solution or using a file as a final program,
+the following checks are recommended:
+
+\begin{itemize}
+    \item Keep one \texttt{main()} function in each compilable source file.
+    \item Prefer \texttt{vector<int>} over variable-length arrays in standard C++.
+    \item Compile with warnings enabled and fix every warning.
+    \item Verify the exact input format, especially whether the first number is
+          a test-case count.
+    \item Test boundary cases such as \(n=1\), empty input where applicable,
+          repeated values, and even-length intervals.
+\end{itemize}
+
+\section{Conclusion}
+
+The CPP\_STL project provides a practical foundation for C++ programming and
+competitive programming. Its strongest learning themes are STL containers,
+priority queues, comparators, sorting, recursion, and interval-based problem
+solving. The next natural step is to organise finished solutions into named
+folders, keep one problem statement with each solution, and add test cases for
+each completed program.
+
+\end{document}
