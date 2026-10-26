@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Project Overview}{2}{}%
+\contentsline {section}{\numberline {2}Tools and Environment}{2}{}%
+\contentsline {section}{\numberline {3}Topics Covered}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Input, Output, and Arrays}{2}{}%
+\contentsline {subsection}{\numberline {3.2}STL Containers}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Sorting and Custom Comparison}{3}{}%
+\contentsline {subsection}{\numberline {3.4}Recursion}{3}{}%
+\contentsline {section}{\numberline {4}Core Algorithm: Custom Interval Array Construction}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Algorithm Steps}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Complexity}{4}{}%
+\contentsline {section}{\numberline {5}Important Source Files}{4}{}%
+\contentsline {section}{\numberline {6}Current Project Structure}{4}{}%
+\contentsline {section}{\numberline {7}Code Quality Notes}{4}{}%
+\contentsline {section}{\numberline {8}Conclusion}{5}{}%
