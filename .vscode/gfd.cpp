@@ -4,15 +4,17 @@ using namespace std;
 vector<int> stored(100,-1);
 // stored [i] = factorial of i
 int facto(int x){
-       if(x <= 1 )
-              return 1;
-       if (stored[x] != -1)
-              return stored[x];
-       else
-              stored[x] = x * facto(x - 1);
-              return stored[x];
+      // Base case
+     // if(x <= 1 )
+     //         return 1;
+      // if (stored[x] != -1)
+         //     return stored[x];
+      // else
+             // stored[x] = x * facto(x - 1);
+             // return stored[x];
 }
 int main(){ 
+       stored[0] = 1;
        cout << facto(5) << endl;
        return 0;
 }
