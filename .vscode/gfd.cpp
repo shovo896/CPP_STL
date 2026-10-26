@@ -18,5 +18,6 @@ int main(){
        for(int i = 1; i < 100; i++)
              stored[i] = i * stored[i - 1];
        cout << facto(5) << endl;
+       cout << stored[5] << endl;
        return 0;
 }
