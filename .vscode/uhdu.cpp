@@ -15,8 +15,9 @@ int calc (int n){
               if (lastDigit != 0 ){ 
                      ans = min(ans, 1 + calc(n - lastDigit));
               }
-              return ans; 
+              tmp /= 10;
        }
+       return  stored[n] = ans; 
 }
 void Solve(){ 
        int n; 
