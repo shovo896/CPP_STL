@@ -13,6 +13,7 @@ void solve(){
        cost[1]= abs(h[0] - h[1]);
        for(int i = 2; i < n; i++){
               cost[i] = min(cost[i-1] + abs(h[i] - h[i-1]), cost[i-2] + abs(h[i] - h[i-2]));
+       cout << cost[n-1] << endl;
        }
 
 }
