@@ -29,7 +29,10 @@ int main()
 { 
        vector<int> L = {2,3,4,5,6,7,8};
        vector<int> R = {1,2,3,4,5,6,7};
-       merge(L,R); 
+       merge(L,R);
+       for (auto &it : merged) {
+              cout << it << " ";
+       }
        return 0; 
 
 }
