@@ -27,6 +27,12 @@ vector<int> merge(vector<int>L , vector<int>R){
        return result;
 
 }
+void mergesort(vector<int>& unsorted, int i ,int j){ 
+       if(i == j) return;
+       int mid = (i + j) / 2;
+       mergesort(unsorted, i, mid);
+       mergesort(unsorted, mid + 1, j);
+}
 
 int main()
 { 
