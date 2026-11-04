@@ -24,6 +24,9 @@ vector<int> merge(vector<int>L , vector<int>R){
               result.push_back(R[j]);
               j++;
        }
+       for(int i = lrange,j =0,i < = rrange;i++,j++){
+              unsorted[i] = result[j];
+       }
        return result;
 
 }
