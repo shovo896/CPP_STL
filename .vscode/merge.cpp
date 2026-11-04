@@ -32,6 +32,7 @@ vector<int> merge(vector<int>L , vector<int>R){
 }
 void mergesort(vector<int>& unsorted, int i ,int j){ 
        if(i == j) return;
+       cout << "i: " << i << " j: " << j << endl; 
        int mid = (i + j) / 2;
        mergesort(unsorted, i, mid);
        mergesort(unsorted, mid + 1, j);
