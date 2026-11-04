@@ -33,6 +33,21 @@ void mergesort(vector<int>& unsorted, int i ,int j){
        mergesort(unsorted, i, mid);
        mergesort(unsorted, mid + 1, j);
 }
+void mergesort(vector<int>& unsorted ,int i ,int j){ 
+       if (i == j) return;
+       if(i > j) return;
+       if (i < j){
+              int mid = (i + j) / 2;
+              mergesort(unsorted, i, mid);
+              mergesort(unsorted, mid + 1, j);
+              vector<int> L(unsorted.begin() + i, unsorted.begin() + mid + 1);
+              vector<int> R(unsorted.begin() + mid + 1, unsorted.begin() + j + 1);
+              vector<int> merged = merge(L, R);
+              for(int k = 0; k < merged.size(); k++){
+                     unsorted[i + k] = merged[k];
+              }
+       }
+}
 
 int main()
 { 
