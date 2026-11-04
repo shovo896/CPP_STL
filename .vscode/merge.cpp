@@ -1,5 +1,8 @@
 #include<bits/stdc++.h> 
-using namespace std; 
+using namespace std;
+bool comp(int x ,int y){
+       return x < y;
+}
 vector<int> merge(vector<int>L , vector<int>R){
        vector<int> result;
        int i = 0, j = 0; 
