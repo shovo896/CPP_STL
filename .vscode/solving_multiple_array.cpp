@@ -11,6 +11,16 @@ void merge(vector <int> &arr, int lrange, int mid, int rrange) {
         L.push_back(arr[i]);
     for (int i = mid + 1; i <= rrange; i++) 
         R.push_back(arr[i]);
+
+        { 
+              int  r = 0;
+              for (int i =0 ; I < L.size(); i++) {
+                  while (r < R.size() && L[i] > R[r]) {
+                      r++;
+                  }
+                  inversion += r; // Count inversions
+              }
+        }
     
     int arrPointer = lrange;
     int i = 0, j = 0; 
