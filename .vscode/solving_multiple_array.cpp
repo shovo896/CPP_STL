@@ -53,6 +53,10 @@ void merge(vector <int> &arr, int lrange, int mid, int rrange) {
         arr[arrPointer] = R[j]; 
         j++; 
         arrPointer++;
+
+        if(L[i] > R[j]) {
+            inversion += (mid + 1) - (lrange + i); // Count inversions
+        }
     }
 }
 
