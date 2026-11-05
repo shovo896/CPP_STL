@@ -42,7 +42,8 @@ while(j < R.size())
 { 
     arr[arrPointer] = R[j]; 
     j++; 
-    arrPointer++; 
+    arrPointer++;
+    compCount++;
 }
 
 void mergeSort(vector<int>& arr, int lrange, int rrange) 
