@@ -35,3 +35,14 @@ while(j < R.size())
     j++; 
     arrPointer++; 
 }
+
+void mergeSort(vector<int>& arr, int lrange, int rrange) 
+{ 
+    if (lrange < rrange) 
+    { 
+        int mid = lrange + (rrange - lrange) / 2; 
+        mergeSort(arr, lrange, mid); 
+        mergeSort(arr, mid + 1, rrange); 
+        merge(arr, lrange, mid, rrange); 
+    } 
+}
