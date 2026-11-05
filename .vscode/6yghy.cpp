@@ -1,9 +1,11 @@
 #include<bits/stdc++.h> 
 using namespace std;
+int compcount = 0;
 
 bool comp (int x ,int y ) {
     return x < y;
 }
+ 
 
 void merge(vector<int> &arr, int lrange, int mid, int rrange) {
     vector<int> L,
@@ -64,5 +66,7 @@ int main()
     cout << "Sorted array is \n"; 
     for (int i = 0; i < arr_size; i++) 
         cout << arr[i] << " "; 
+        cout << "\n";
+    cout << "Number of comparisons: " << compcount << "\n";
     return 0; 
 }
