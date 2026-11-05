@@ -46,3 +46,16 @@ void mergeSort(vector<int>& arr, int lrange, int rrange)
         merge(arr, lrange, mid, rrange); 
     } 
 }
+
+int main() 
+{ 
+    vector<int> arr = {12, 11, 13, 5, 6, 7}; 
+    int arr_size = arr.size(); 
+
+    mergeSort(arr, 0, arr_size - 1); 
+
+    cout << "Sorted array is \n"; 
+    for (int i = 0; i < arr_size; i++) 
+        cout << arr[i] << " "; 
+    return 0; 
+}
