@@ -12,6 +12,15 @@ void merge(vector <int> &arr, int lrange, int mid, int rrange) {
     for (int i = mid + 1; i <= rrange; i++) 
         R.push_back(arr[i]);
 
+    for(auto& it : L) {
+       cout << it << " ";
+    } 
+    cout << endl;
+    for(auto& it : R) {
+       cout << it << " ";
+    } 
+    cout << endl;
+
         { 
               int  r = 0;
               for (int i =0 ; I < L.size(); i++) {
