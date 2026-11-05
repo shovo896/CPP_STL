@@ -15,7 +15,7 @@ void merge(vector <int> &arr, int lrange, int mid, int rrange) {
         { 
               int  r = 0;
               for (int i =0 ; I < L.size(); i++) {
-                  while (r < R.size() && L[i] > R[r]) {
+                  while (r+1  < R.size() && L[i] > R[r+1]) {
                       r++;
                   }
                   inversion += r; // Count inversions
