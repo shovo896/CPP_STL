@@ -1,6 +1,13 @@
 #include<bits/stdc++.h> 
-using namespace std; 
-vector<int>L,R ;
+using namespace std;
+
+bool comp (int x ,int y ) {
+    return x < y;
+}
+
+void merge(vector<int> &arr, int lrange, int mid, int rrange) {
+    vector<int> L,
+    R;
 for (int i = lrange; i <= mid; i++) 
     L.push_back(arr[i]);
 
