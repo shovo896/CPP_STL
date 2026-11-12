@@ -10,5 +10,8 @@ int main(){
            cin >> arr[i];
            arr[i] += arr[i-1]; // prefix sum
        }
-       vector<long long> preSum(n - 1);
+       vector<long long> preSum(n + 1);
+       for (int i = 1; i <= n; i++) {
+           preSum[i] = preSum[i - 1] + arr[i];
+       }
 }

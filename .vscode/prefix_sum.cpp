@@ -8,6 +8,10 @@ int main() {
        for (int i = 1; i <=n ; i++) {
            cin >> arr[i];
        }
+       vector<long long> preSum(n + 1);
+       for (int i = 1; i <= n; i++) {
+           preSum[i] = preSum[i - 1] + arr[i];
+       }
        while(q--){ 
               int l, r; 
               cin >> l >> r;
@@ -16,6 +20,6 @@ int main() {
                   sum += arr[i];
               }
               cout << sum << endl; 
-              
+
        }
 }
