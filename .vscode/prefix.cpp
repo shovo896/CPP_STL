@@ -11,4 +11,10 @@ int main(){
        for (int i = 1; i <= n; i++) {
            preSum[i] = preSum[i - 1] + arr[i];
        }
+       long long ans = a[1];
+       long long min_found = 0;
+       for (int i = 1; i <= n; i++) {
+           min_found = min(min_found, preSum[i]);
+           ans = max(ans, preSum[i] - min_found);
+       } 
 }
