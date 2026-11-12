@@ -22,5 +22,9 @@ int main() {
               cout << sum << endl; 
 
        }
+
+       // preSum[5] = preSum[4] + arr[5] = 10 + 5 = 15
+
        
+
 }
