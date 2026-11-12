@@ -15,5 +15,7 @@ int main() {
               for (int i = l; i <= r; i++) {
                   sum += arr[i];
               }
+              cout << sum << endl; 
+              
        }
 }
