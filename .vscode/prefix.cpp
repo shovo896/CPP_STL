@@ -16,5 +16,6 @@ int main(){
        for (int i = 1; i <= n; i++) {
            min_found = min(min_found, preSum[i]);
            ans = max(ans, preSum[i] - min_found);
+           min_found = min(min_found, preSum[i]);
        } 
 }
