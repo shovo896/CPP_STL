@@ -17,5 +17,6 @@ int main(){
            min_found = min(min_found, preSum[i]);
            ans = max(ans, preSum[i] - min_found);
            min_found = min(min_found, preSum[i]);
-       } 
+       }
+       cout << ans << endl; 
 }
