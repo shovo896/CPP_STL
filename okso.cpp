@@ -11,5 +11,6 @@ int main()
               cin >> l >> r;
               cout << preSum[r] ^ preSum[l - 1] << endl;
       }
+      vector<long long> preSum(n + 2);
      
 }
