@@ -14,6 +14,6 @@ int main(){
        while(q--){
            int l, r ; 
            cin >> l >> r ; 
-           cout << preSum[r] - preSum[l-1] << endl ;
+           cout << preSum[r]  ^ preSum[l-1] << endl ;
        }
 }
