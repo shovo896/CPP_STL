@@ -7,9 +7,11 @@ int main()
        vector<int> a(n + 2);
       while(q--)
       {
-              int l, r;
-              cin >> l >> r;
-              cout << preSum[r] ^ preSum[l - 1] << endl;
+              int l, r,x;
+              cin >> l >> r>>x;
+              a[l] += x;
+              a[r + 1] -= x;
+              
       }
       vector<long long> preSum(n + 2);
      
