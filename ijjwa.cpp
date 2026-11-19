@@ -9,5 +9,13 @@ int main(){
               cin >> l >> r >> x; 
               a[l] += x;
               a[r + 1] -= x;
+
+
        }
+       vector<long long> preSum(n + 2);
+       for (int i = 1; i <= n; i++){ 
+              preSum[i] = preSum[i - 1] + a[i];
+       }
+       cout << preSum[i-1]+a[i] << endl;
+       cout<<preSum[i]<<endl;
 }
