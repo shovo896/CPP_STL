@@ -9,13 +9,13 @@ int main()
        {
               cin >> a[i+2];
        }
+       while (q--)
+       {
+              }
        vector<long long> preSum(n + 1);
        for (int i = 1; i <= n; i++)
        {
               preSum[i] = preSum[i - 1] + a[i];
        }
-       while (q--)
-       {
-              
-       }
+     
 }
