@@ -18,8 +18,11 @@ int main(){
        }
        n= a.size()+1;
        vector<long long> preSum(n + 2);
+       int ans = 0; 
        for (int i = 1; i <= n; i++){ 
               preSum[i] = preSum[i - 1] + a[i];
               cout << preSum[i] << " ";
+              ans = max(ans, preSum[i]);
        }
+       cout << ans << endl;
 }
