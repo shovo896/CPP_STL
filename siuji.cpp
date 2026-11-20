@@ -16,6 +16,7 @@ int main(){
               a.push_back(u);
               cout << a[i] << " ";
        }
+       n= a.size()+1;
        vector<long long> preSum(n + 2);
        for (int i = 1; i <= n; i++){ 
               preSum[i] = preSum[i - 1] + a[i];
