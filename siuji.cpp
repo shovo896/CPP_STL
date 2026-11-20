@@ -9,7 +9,11 @@ int main(){
               cin >> l >> r; 
               cnt[l]++; 
               cnt[r+1]--; 
-              
+
+       }
+       vector<int> a;
+       for(auto [x,u] : cnt){
+              cout << x << " " << u << endl;
        }
        vector<long long> preSum(n + 2);
        for (int i = 1; i <= n; i++){ 
