@@ -15,8 +15,8 @@ int main(){
        for (auto [x,u] : cnt){
               a.push_back(u); 
               cout << a[i] << " "; 
-              cout << preSum[i] << " ";
-              ans = max(ans, preSum[i]);
+              //cout << preSum[i] << " ";
+              //ans = max(ans, preSum[i]);
        }
        
 
@@ -24,6 +24,9 @@ int main(){
        vector<long long> preSum(n + 2);
        for (int i = 1; i <= n; i++){
               preSum[i] = preSum[i - 1] + cnt[i];
-              cout << preSum[i] << " "; 
+              cout << preSum[i] << " ";
+              ans = max(ans, preSum[i]); 
+
        }
+       cout << ans << endl; 
 }
