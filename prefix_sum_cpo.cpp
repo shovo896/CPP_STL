@@ -11,4 +11,7 @@ int main(){
        for (int i = 1; i <= n; i++){ 
               pre[i] = pre[i - 1] + a[i]; 
        }
+       int ans = 0;
+       map<int, int> cnt;
+       
 }
