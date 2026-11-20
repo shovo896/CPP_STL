@@ -15,6 +15,8 @@ int main(){
        for (auto [x,u] : cnt){
               a.push_back(u); 
               cout << a[i] << " "; 
+              cout << preSum[i] << " ";
+              ans = max(ans, preSum[i]);
        }
        
 
