@@ -11,7 +11,7 @@ int main(){
               cnt[r+1]--; 
 
        }
-       vector<int> a;
+       vector<int> a(1);
        for(auto [x,u] : cnt){
               cout << x << " " << u << endl;
        }
