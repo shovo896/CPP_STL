@@ -13,5 +13,10 @@ int main(){
        }
        int ans = 0;
        map<int, int> cnt;
-       
+       cnt [0] = 1;
+       for (int i = 1; i <= n; i++){
+              ans += cnt[pre[i] - x];
+              cnt[pre[i]]++;
+       }
+       cout << ans << endl;
 }
