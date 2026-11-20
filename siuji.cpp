@@ -13,8 +13,8 @@ int main(){
        }
        vector<int> a(1);
        for(auto [x,u] : cnt){
-              a.push_back(u); 
-              
+              a.push_back(u);
+              cout << a[i] << " ";
        }
        vector<long long> preSum(n + 2);
        for (int i = 1; i <= n; i++){ 
