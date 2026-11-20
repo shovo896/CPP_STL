@@ -18,4 +18,5 @@ int main(){
        }
        cout << preSum[i-1]+a[i] << endl;
        cout<<preSum[i]<<endl;
+       
 }
