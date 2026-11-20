@@ -10,6 +10,8 @@ int main(){
               cnt[l]++; 
               cnt[r+1]--; 
        }
+       vector<int> a(1); 
+       
        for (auto [x,u] : cnt){
               cout << x << " " << u << endl; 
        }
