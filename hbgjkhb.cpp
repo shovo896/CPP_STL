@@ -11,9 +11,10 @@ int main(){
               cnt[r+1]--; 
        }
        vector<int> a(1); 
-       
+
        for (auto [x,u] : cnt){
-              cout << x << " " << u << endl; 
+              a.push_back(u); 
+              cout << a[i] << " "; 
        }
        
 
